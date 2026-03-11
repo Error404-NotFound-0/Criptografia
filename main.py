@@ -30,9 +30,9 @@ def criptografar():
     for i in m:
         if i.isalpha():
             if chave2.lower() == 'a':
-                c += f"<{(ord(i)+chave1)*chave1}>"
+                c += f"!{random.randint(1000, 10000000000)}!${random.randint(1000, 10000000000)}$<{(ord(i)+chave1)*chave1}>"
             if chave2.lower() == 'b':
-                c += f"<{(ord(i)*chave1)+chave1}>"
+                c += f"!{random.randint(1000, 10000000000)}!${random.randint(1000, 10000000000)}$<{(ord(i)*chave1)+chave1}>"
         else:
             while True:
                 try:
